@@ -10,9 +10,7 @@ git hub https://github.com/sebleedelisle/JSTouchController.
 
 
 
-This is HTML5 Source Code for touch-pad device, and
-
-RC Car with Raspberry-pi.
+This is HTML5 Source Code for touch-pad device, and RC Car with Raspberry-pi.
 
 Dependency
 HW 
