@@ -3,7 +3,7 @@ touchpirc
 
 Touch Control for Raspberrypi RC-Car
 
-Project by rasplay.com - Multi-Control-RCCar
+Project by www.rasplay.org - Multi-Control-RCCar
 
 The original source code is http://sebleedelisle.com/2011/04/multi-touch-game-controller-in-javascripthtml5-for-ipad,
 git hub https://github.com/sebleedelisle/JSTouchController.
