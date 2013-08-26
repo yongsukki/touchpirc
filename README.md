@@ -16,7 +16,7 @@ Dependency
 HW 
  1. RC Car with DC Motor
  2. Raspberry-pi, it is ultra-low-cost ($35) credit-card sized computer, can run Linux.
- 3. Multi-Pi, it is Raspberry-pi extension Board, easy to connect DC Motor and it is like breadboard. Some sample in www.rasplay.com
+ 3. Multi-Pi, it is Raspberry-pi extension Board, easy to connect DC Motor and it is like breadboard. Some sample in www.rasplay.org
 
 SW
  1. Webiopi, it is Raspberry IO Web Software using Python, HTML5, JS.
