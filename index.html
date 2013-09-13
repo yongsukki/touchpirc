@@ -105,9 +105,14 @@ function resetCanvas (e) {
 function init(){
 	webiopi().ready(function() {
 		webiopi().refreshTime = 10000;
-		w().refreshGPIO(true);
-	});
 
+                webiopi().setFunction(GPIO_RIGHT_PIN, "OUT");
+                webiopi().setFunction(GPIO_LEFT_PIN, "OUT");
+                webiopi().setFunction(GPIO_FRONT_PIN, "OUT");
+                webiopi().setFunction(GPIO_REAR_PIN, "OUT");
+
+                w().refreshGPIO(true);
+	});
 }
 
 function draw() {
@@ -380,11 +385,26 @@ function onTouchEnd(e) {
 		}
 		else if (touch.clientX>(canvas.width - 30) && touch.clientY<50)
 		{
+                    webiopi().setFunction(GPIO_RIGHT_PIN, "IN");
+                    webiopi().setFunction(GPIO_LEFT_PIN, "IN");
+                    webiopi().setFunction(GPIO_FRONT_PIN, "IN");
+                    webiopi().setFunction(GPIO_REAR_PIN, "IN");
+                    
+                    sleep(3000); 
                     c.fillText("x:"+(canvas.width-touch.clientX)+" y:"+(canvas.height-touch.clientY), canvas.width/2, canvas.height/2);
         	    self.close();
 		}
 	}
 
+}
+
+function sleep(milliseconds) {
+  var start = new Date().getTime();
+  for (var i = 0; i < 1e7; i++) {
+    if ((new Date().getTime() - start) > milliseconds){
+      break;
+    }
+  }
 }
 
 function onMouseMove(event) {
