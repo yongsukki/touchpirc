@@ -26,7 +26,12 @@ I'm using in webiopi.
 $ cd /usr/share/webiopi/htdocs/app
 $ sudo git clone https://github.com/rasplay/touchpirc.git
 
+$ sudo vi /etc/webiopi/config
+Top of this file, you definite GPIO Number, ex.
+4 = OUT
+
+
 Run Web Brower, supported HTML5 (like Chrome browser)
-"http://[raspberrypi-IP]/app/toucepirc"
+"http://[raspberrypi-IP:8000]/app/toucepirc/"
 
 Enjoy!!  
