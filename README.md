@@ -35,7 +35,7 @@ $ sudo vi /etc/webiopi/config
 
 Run Web Brower, supported HTML5 (like Chrome browser)
 ```
-http://[raspberrypi-IP:8000]/app/toucepirc/
+http://[raspberrypi-IP:8000]/app/touchpirc/
 ```
 You must type last '/'. 
 
