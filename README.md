@@ -22,16 +22,21 @@ SW
  1. Webiopi, it is Raspberry IO Web Software using Python, HTML5, JS.
 
 I'm using in webiopi.
-
+```
 $ cd /usr/share/webiopi/htdocs/app
 $ sudo git clone https://github.com/rasplay/touchpirc.git
+```
 
-$ sudo vi /etc/webiopi/config
 Top of this file, you definite GPIO Number, ex.
 4 = OUT
-
+```
+$ sudo vi /etc/webiopi/config
+```
 
 Run Web Brower, supported HTML5 (like Chrome browser)
-"http://[raspberrypi-IP:8000]/app/toucepirc/"
+```
+http://[raspberrypi-IP:8000]/app/toucepirc/
+```
+You must type last '/'. 
 
 Enjoy!!  
