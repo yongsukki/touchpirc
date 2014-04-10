@@ -40,3 +40,6 @@ http://[raspberrypi-IP:8000]/app/touchpirc/
 You must type last '/'. 
 
 Enjoy!!  
+
+![ScreenShot](http://www.rasplay.org/wp-content/uploads/%EA%B7%B8%EB%A6%BC13.png?w=750)
+
