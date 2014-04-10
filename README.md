@@ -40,8 +40,3 @@ http://[raspberrypi-IP:8000]/app/touchpirc/
 You must type last '/'. 
 
 Enjoy!!  
-
-If you click the image, you will be transferred to movie.
-
-[![Alt text for your video](http://www.rasplay.org/wp-content/uploads/%EA%B7%B8%EB%A6%BC13.png?w=500)](http://www.youtube.com/watch?v=Ricpb-1gF_4)
-
