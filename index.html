@@ -16,8 +16,11 @@
 	}
 
 	body {
-		background:url('http://192.168.0.14:8080/?action=stream') no-repeat center center fixed;
-		/*background-color: #000000;*/
+		/*
+		 * HTML5 Base Streaming 
+		 *background:url('http://192.168.0.14:8080/?action=stream') no-repeat center center fixed;
+		 */
+		background-color: #000000;
 		margin: 0px;
 	}
 	canvas {
@@ -46,7 +49,7 @@ var
 	M1_B = 17, // Left pin no of RPi GPIO
 	M2_A = 27, // Front pin no of RPi GPIO
 	M2_B = 22,  // Rear pin no of RPi GPIO
-	ON_LED = 18,  // LED
+	ON_LED = 18,  // POWER ON LED
     MAXCIRCLERADIAL = 100,
     APPLYMOVE = 50/100; // If user move leftTouch APPLYMOVE percent of MAXCIRCLERADIAL any direction, then Move Target.
 
@@ -216,10 +219,11 @@ function controlGpio(calcVec) {
 
 	applyVec.copyFrom(calcVec);
 
-	if ( valLED == GPIO_LOW ) {
-		stopGpio();
-	}
-	else {
+	/*
+	 * If you have POWER_ON Process
+	 *if ( valLED == GPIO_HIGH ) {
+	 */
+	if ( True ) {
 		if ( applyVec.x > MAXCIRCLERADIAL * APPLYMOVE ) {
 			// Turn Right
 			webiopi().digitalWrite(M1_A, GPIO_LOW);  // GPIO Right Pin set High
@@ -263,6 +267,9 @@ function controlGpio(calcVec) {
 			webiopi().digitalWrite(M2_A, GPIO_LOW);   // GPIO Right Pin set Low
 			webiopi().digitalWrite(M2_B, GPIO_LOW);   // GPIO Left Pin set Low
 		}
+	}
+	else {
+	    stopGpio();
 	}
 
 }
